@@ -4,19 +4,58 @@ $menuText: #c4c4c4;
 
 body {
     background-color: $app-bg !important;
-    font-family: sans-serif;
+    font-family: Mark Pro,sans-serif;
+    color: $white;
+}
+
+.main-app {
+    padding: 4rem;
+    margin-top: 4rem;
 }
 
 a {
-    text-decoration:  none !important;
+    text-decoration: none !important;
+
     &:hover {
         color: $white !important;
     }
 }
 
+p {
+    color: $white;
+    font-size: 9rem;
+
+    span {}
+}
+
+section {
+    margin-top: 4rem;
+    padding: 5rem 10rem 5rem 10rem;
+    font-size: 5rem;
+    line-height: 100%;
+    letter-spacing: -.03em;
+    color: $white;
+}
+
+.liner-text {
+    background: -webkit-linear-gradient(135deg, #6bc5f8, #cf59e6, #6bc5f8, #cf59e6);
+    background: linear-gradient(-45deg, #6bc5f8, #cf59e6, #6bc5f8, #cf59e6);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 400% 400%;
+    -webkit-animation: gradient 1s ease infinite;
+    animation: gradient 1s ease infinite;
+}
+
+.header-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .header {
     position: fixed;
-    top: 5rem;
     right: 0;
     left: 0;
     padding: 1.5rem 4rem;
@@ -24,16 +63,23 @@ a {
     justify-content: space-between;
     align-items: center;
     width: 50%;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
+    // margin-left: auto;
+    // margin-right: auto;
     background: rgba(42, 43, 56, .5);
     border: 0.2rem solid #2a2b37;
     backdrop-filter: blur(104px);
     border-radius: 1rem;
-    height: 10px;
+    height: 70px;
 }
 
-img {
+.header-footer {
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.logo-img {
     overflow-clip-margin: content-box;
     overflow: clip;
     height: 30px;
