@@ -1,23 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
-
+import AnimatedCursor from "react-animated-cursor";
+import Header from "./component/Header/Header";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header />
+      <AnimatedCursor
+        innerSize={10}
+        outerSize={10}
+        innerScale={0.5}
+        outerScale={5}
+        outerAlpha={0.2}
+        hasBlendMode={true}
+        outerStyle={{
+          border: '0px solid #fff',
+          mixBlendMode: 'exclusion'
+        }}
+        innerStyle={{
+          backgroundColor: '#fff'
+        }}
+      />
     </div>
   );
 }

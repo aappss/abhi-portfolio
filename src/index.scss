@@ -1,0 +1,50 @@
+$app-bg: #10101a;
+$white: #ffffff;
+$menuText: #c4c4c4;
+
+body {
+    background-color: $app-bg !important;
+    font-family: sans-serif;
+}
+
+a {
+    text-decoration:  none !important;
+    &:hover {
+        color: $white !important;
+    }
+}
+
+.header {
+    position: fixed;
+    top: 5rem;
+    right: 0;
+    left: 0;
+    padding: 1.5rem 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    background: rgba(42, 43, 56, .5);
+    border: 0.2rem solid #2a2b37;
+    backdrop-filter: blur(104px);
+    border-radius: 1rem;
+    height: 10px;
+}
+
+img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+    height: 30px;
+    width: 30px;
+}
+
+.menu-button {
+    color: $menuText;
+    margin-right: 10px;
+
+    span {
+        margin-right: 10px;
+    }
+}
