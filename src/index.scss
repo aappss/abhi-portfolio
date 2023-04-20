@@ -30,11 +30,20 @@ p {
 
 section {
     margin-top: 4rem;
-    padding: 5rem 10rem 5rem 10rem;
-    font-size: 5rem;
-    line-height: 100%;
-    letter-spacing: -.03em;
+    padding: 5rem 10rem 5rem 10rem;    
     color: $white;
+
+    .header-content {
+        font-size: 5rem;
+        line-height: 100%;
+        letter-spacing: -.03em;
+    }
+
+    .about-me {
+        font-size: 1.7rem !important;
+        line-height: normal !important;
+        letter-spacing: normal !important;
+    }
 }
 
 .liner-text {
@@ -94,3 +103,13 @@ section {
         margin-right: 10px;
     }
 }
+
+.bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background:orangered;
+    transform-origin: 0%;
+  }
